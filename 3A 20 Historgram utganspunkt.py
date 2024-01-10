@@ -4,14 +4,8 @@ hoyder = [180.0, 189.2, 180.5, 174.9, 180.1, 176.6, 181.3, 195.9, 173.4, 184.1, 
 oppdelinger=[150, 160, 170, 180, 190, 200, 210]
 
 # for å få et finere plot kan vi style med nøkkelordene:
-plt.suptitle("Histogrammer")
-plt.subplot(2,2,1)
-plt.title("oppdelinger")
-plt.hist(hoyder,bins=oppdelinger, color="seagreen", edgecolor="black")
-plt.xlabel("Høyde (cm)")
-plt.ylabel("Antall")
-# plt.show()
 # color="seagreen", edgecolor="black"
+plt.hist( )
 
 ## OPPGAVER ##
 # 1. oppgave Tegn et histogram med oppdelingene. 
@@ -19,4 +13,7 @@ plt.ylabel("Antall")
 # 3. oppgave Tegn et kumulativt histogram med oppdelingene.
 # 4. oppgave Tegn et histogram med ulike størrelser på oppdelinger.
     #hint Bruk density=true for å få riktig fordeling.
-# 5. oppgave Tegn alle disse 4 histogrammene i samme plot ved å bruke subplots
+
+plt.xlabel("Høyde (cm)")
+plt.ylabel("Antall")
+plt.show()
